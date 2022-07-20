@@ -5,3 +5,8 @@ services:
     build:
       context: .
       dokerfile: Dokerfile
+networks:
+  socovos-lan:
+    driver: macvlan
+    driver_opts:
+      parent: eth0
