@@ -2,3 +2,6 @@ version: "3.8"
 services:
   node:
     container_name: "socovos-server"
+    build:
+      context: .
+      dokerfile: Dokerfile
